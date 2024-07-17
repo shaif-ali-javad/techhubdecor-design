@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&family=Unbounded:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    background-color: #09102a;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.header.sticky {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+   background-color: #ffffff;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 2.7rem;
+    margin-left: 0; /* Initially no margin */
+}
+
+.header .logo .img3 {
+    margin-left: 2rem; /* Adjust margin to create visual order change */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.header .navbar button{
+    outline:none ;
+    transition: 1s;
+}
+
+.header .navbar button:active{
+    transition: 500ms;
+    background-color: #00000065;
+}
+
+.header.sticky .navbar button:active{
+    transition: 500ms;
+    background-color: #000000bf;
+}
+
+.header.sticky .navbar button{
+    outline: .2rem solid rgba(33, 33, 33, 0.333) ;
+}
+
+.header .navbar-nav button .navbar-toggler-icon {
+    color: #fff;
+}
+
+.header .navbar-nav li {
+    padding: 0 1rem;
+}
+
+.header .navbar-nav .active {
+    transition: 500ms;
+    background-color: rgba(215, 215, 215, 0.343);
+    border-radius: 3rem;
+}
+
+.header.sticky .navbar-nav .active {
+    background-color: rgba(215, 215, 215, 0.343);
+}
+
+.header.sticky .navbar-nav .active a{
+    color: #ffffff;
+}
+
+.header .navbar-nav li:hover {
+  transition: 500ms;
+  background-color: rgba(215, 215, 215, 0.343);
+    border-radius: 3rem;
+}
+
+.header.sticky .navbar-nav li:hover {
+    background-color: #e1e1e1;
+    border-radius: 3rem;
+    transition: background-color 0.3s ease-in-out; /* Added transition for background-color */
+}
+
+.header .navbar-nav li a {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out; /* Added transition for color */
+}
+
+.header.sticky .navbar-nav li a {
+    transition: color 0.1s ease-in-out; /* Added transition for color */
+    color: #ffffff;
+}
+.header.sticky .navbar-nav li:hover a {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+} */
+
+
+.section-heading{
+    padding: 10rem 0 5rem;
+} 
+
+*{
+    /* color: white; */
+}
+
+.lm10{
+    /* background-color: #09102a; */
+}
+
+
+#navbar li {
+    list-style-type: none;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  #navbar #active::after,
+  #navbar li:hover::after {
+    position: absolute;
+    content: "";
+    background-color: #17cf97;
+    width: 30%;
+    height: 2px;
+    bottom: 5px;
+    left: 20px;
+  }
+  #navbar #active,
+  #navbar li {
+    cursor: pointer;
+  }
+  
+  #mobile {
+    display: none;
+  }
+  
+  #mobile i {
+    color: #fff;
+    margin: 21.3px 0;
+  }
+  
+  @media screen and (max-width: 896px) {
+    #mobile {
+      display: block;
+      cursor: pointer;
+    }  
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  
+
+.image0 {
+    position: relative; /* Add position relative to make the ::before pseudo-element position properly */
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/premium-photo/modern-metropolis-skyline-chongqing-china_1112-2482.jpg?w=900);
+}
+
+.image0 .p {
+    position: relative; /* Add position relative to make ::before position properly */
+    z-index: 1; /* Bring the content above the pseudo-element */
+    transform: translateY(50%);
+}
+
+.image0 h1 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 760px) { 
+    
+    .image0 {
+        height: 16rem;
+    }
+
+    .image0 h1 {
+        font-size: 4.5rem;
+    }   
+}
+
+.image0 .p{
+    transform: translateY(35%);
+}
+
+
+.footer{
+    padding: 2rem 1rem 0;
+    background-color: black;
+  }
+
+
+
+  
+.a{
+    margin: .3rem;
+    color: white;
+  }
+  
+  .a:hover{
+    margin: .3rem;
+    color: white;
+  }
+  
+  .bi{
+    color: #000;
+    background-color: white;
+    padding: .3rem .5em;
+    border-radius: 40%;
+  }
+  
+  .saperate p{
+    margin-top: 1rem;
+  }
+  
+  .saperate:hover .bi{
+    background-color:#557bac ;
+    color: white;
+  }
+  
+  .saperate h2 {
+    margin-bottom: 2rem;
+  }
